@@ -8,14 +8,14 @@ export function Banner() {
     <Box
       sx={{
         width: '100%',
-        height: '100vh',
+        height: 600,
         backgroundImage: `url(${banner})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '60%',
       }}
     >
-      <Box sx={{ height: '100%', bgcolor: (theme) => alpha(theme.palette.common.black, 0.3) }}>
+      <Box sx={{ height: '100%', bgcolor: (theme) => alpha(theme.palette.common.black, 0.5) }}>
         <Container sx={{ height: '100%' }}>
           <Stack sx={{ height: '100%' }}>
             <Box flexGrow={1} />
@@ -33,11 +33,11 @@ export function Banner() {
               </Box>
 
               <Box sx={{ width: { xs: '100%', md: 'auto' } }}>
-                <Typography variant="h5" color="gray">
+                <Typography variant="h5" color="white">
                   Ticket sales hours
                 </Typography>
 
-                <Typography variant="h6" color="gray">
+                <Typography variant="h6" color="white">
                   08: 00 AM - 03:00 PM
                 </Typography>
               </Box>
