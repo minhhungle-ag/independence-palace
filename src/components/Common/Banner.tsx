@@ -30,11 +30,10 @@ export function Banner() {
               <Box sx={{ width: { xs: '100%', md: 1 / 2 } }}>
                 <Typography
                   variant="h2"
-                  fontWeight={500}
+                  fontWeight={600}
                   color="white"
                   sx={{
                     fontFamily: 'monospace',
-                    fontWeight: 700,
                     letterSpacing: '.1rem',
 
                     textDecoration: 'none',

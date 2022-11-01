@@ -12,19 +12,19 @@ export function Home(props: HomeProps) {
       <Banner />
 
       <Container>
-        <Box sx={{ my: { xs: 3, md: 8 } }}>
+        <Box sx={{ my: { xs: 4, md: 8 } }}>
           <Information />
         </Box>
 
-        <Box sx={{ my: { xs: 3, md: 8 } }}>
+        <Box sx={{ my: { xs: 4, md: 8 } }}>
           <About />
         </Box>
 
-        <Box sx={{ my: { xs: 3, md: 8 } }}>
+        <Box sx={{ my: { xs: 4, md: 8 } }}>
           <History />
         </Box>
 
-        <Box sx={{ my: { xs: 3, md: 8 } }}>
+        <Box sx={{ my: { xs: 4, md: 8 } }}>
           <Gallery />
         </Box>
       </Container>
