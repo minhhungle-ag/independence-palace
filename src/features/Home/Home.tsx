@@ -1,6 +1,7 @@
-import { Box, Container, Divider } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import { Banner } from '../../components/Common/Banner'
 import { About } from './components/About'
+import { Gallery } from './components/Gallery'
 import { History } from './components/History'
 import { Information } from './components/Information'
 export interface HomeProps {}
@@ -21,6 +22,10 @@ export function Home(props: HomeProps) {
 
         <Box sx={{ my: { xs: 3, md: 8 } }}>
           <History />
+        </Box>
+
+        <Box sx={{ my: { xs: 3, md: 8 } }}>
+          <Gallery />
         </Box>
       </Container>
     </Box>

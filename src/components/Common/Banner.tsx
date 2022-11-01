@@ -1,21 +1,22 @@
 import { Box, Stack, Typography, alpha } from '@mui/material'
 import { Container } from '@mui/system'
 
-const banner = 'https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/09/2-8.jpg'
+const banner =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Palacio_de_la_Reunificaci%C3%B3n%2C_Ciudad_Ho_Chi_Minh%2C_Vietnam%2C_2013-08-14%2C_DD_03.JPG/5503px-Mapcarta.jpg'
 
 export function Banner() {
   return (
     <Box
       sx={{
         width: '100%',
-        height: 600,
+        height: 750,
         backgroundImage: `url(${banner})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '60%',
+        backgroundPosition: 'center',
       }}
     >
-      <Box sx={{ height: '100%', bgcolor: (theme) => alpha(theme.palette.common.black, 0.5) }}>
+      <Box sx={{ height: '100%', bgcolor: (theme) => alpha(theme.palette.common.black, 0.3) }}>
         <Container sx={{ height: '100%' }}>
           <Stack sx={{ height: '100%' }}>
             <Box flexGrow={1} />
