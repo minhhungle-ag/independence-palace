@@ -22,7 +22,7 @@ export function Banner() {
             <Box flexGrow={1} />
             <Stack
               direction="row"
-              alignItems="flex-start"
+              alignItems="flex-end"
               justifyContent="space-between"
               flexWrap="wrap"
               sx={{ py: 6 }}
