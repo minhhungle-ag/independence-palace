@@ -28,8 +28,19 @@ export function Banner() {
               sx={{ py: 6 }}
             >
               <Box sx={{ width: { xs: '100%', md: 1 / 2 } }}>
-                <Typography variant="h2" fontWeight={500} color="white">
-                  INDEPENDENCE PALACE
+                <Typography
+                  variant="h2"
+                  fontWeight={500}
+                  color="white"
+                  sx={{
+                    fontFamily: 'monospace',
+                    fontWeight: 700,
+                    letterSpacing: '.1rem',
+
+                    textDecoration: 'none',
+                  }}
+                >
+                  The Independence Palace
                 </Typography>
               </Box>
 
