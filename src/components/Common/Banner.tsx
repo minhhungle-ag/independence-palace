@@ -9,11 +9,12 @@ export function Banner() {
     <Box
       sx={{
         width: '100%',
-        height: 750,
+        height: '100vh',
         backgroundImage: `url(${banner})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
       }}
     >
       <Box sx={{ height: '100%', bgcolor: (theme) => alpha(theme.palette.common.black, 0.3) }}>

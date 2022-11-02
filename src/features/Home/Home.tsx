@@ -1,5 +1,6 @@
 import { Box, Container } from '@mui/material'
 import { Banner } from '../../components/Common/Banner'
+import { FooterBanner } from '../../components/Common/FooterBanner'
 import { About } from './components/About'
 import { Gallery } from './components/Gallery'
 import { History } from './components/History'
@@ -28,6 +29,10 @@ export function Home(props: HomeProps) {
           <Gallery />
         </Box>
       </Container>
+
+      <Box>
+        <FooterBanner />
+      </Box>
     </Box>
   )
 }

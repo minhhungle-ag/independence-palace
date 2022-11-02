@@ -5,8 +5,7 @@ import { Box, Button, Stack } from '@mui/material'
 import Container from '@mui/material/Container'
 import IconButton from '@mui/material/IconButton'
 import Toolbar from '@mui/material/Toolbar'
-
-const logo = 'https://dinhdoclap.gov.vn/wp-content/uploads/2017/09/logo.png'
+import { LOGO } from '../../constants/common'
 
 const pages = ['Home', 'Introduction', 'Relic', 'Exhibition', 'Activities', 'Services']
 
@@ -20,7 +19,7 @@ export function Header({ onToggleDrawer }: HeaderProps) {
       <Container>
         <Toolbar disableGutters sx={{ my: 1 }}>
           <Box flexGrow={1}>
-            <Box component="img" alt="logo" src={logo} />
+            <Box component="img" alt="logo" src={LOGO} />
           </Box>
 
           <Stack
