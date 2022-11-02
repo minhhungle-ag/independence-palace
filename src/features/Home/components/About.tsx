@@ -12,10 +12,10 @@ const infoList = [
 
 export function About() {
   return (
-    <Stack direction="row" alignItems="center" flexWrap="wrap" sx={{ mx: -1 }}>
+    <Stack direction="row" alignItems="center" flexWrap="wrap" sx={{ mx: -2 }}>
       <Box sx={{ width: { xs: '100%', md: 1 / 2 } }}>
-        <Stack spacing={2} sx={{ p: 1 }}>
-          <Typography variant="h3" fontWeight="bold">
+        <Stack spacing={2} sx={{ p: 2 }}>
+          <Typography variant="h4" fontWeight="bold">
             About
           </Typography>
 
@@ -30,7 +30,7 @@ export function About() {
       </Box>
 
       <Box sx={{ width: { xs: '100%', md: 1 / 2 } }}>
-        <Stack spacing={4} sx={{ p: 1 }}>
+        <Stack spacing={4} sx={{ p: 2 }}>
           <Box
             component="img"
             width="100%"

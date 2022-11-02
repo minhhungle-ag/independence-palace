@@ -20,7 +20,7 @@ const galleryList = [
 export function Gallery() {
   return (
     <Box>
-      <Typography variant="h3" fontWeight="bold" sx={{ mb: 2 }}>
+      <Typography variant="h4" fontWeight="bold" sx={{ mb: 2 }}>
         Gallery
       </Typography>
 

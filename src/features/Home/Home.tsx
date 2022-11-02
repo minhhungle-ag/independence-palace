@@ -18,11 +18,11 @@ export function Home(props: HomeProps) {
         </Box>
 
         <Box sx={{ my: { xs: 4, md: 8 } }}>
-          <About />
+          <History />
         </Box>
 
         <Box sx={{ my: { xs: 4, md: 8 } }}>
-          <History />
+          <About />
         </Box>
 
         <Box sx={{ my: { xs: 4, md: 8 } }}>
