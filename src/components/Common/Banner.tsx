@@ -1,10 +1,14 @@
-import { Box, Stack, Typography, alpha } from '@mui/material'
+import { Box, Stack, Typography, alpha, useMediaQuery } from '@mui/material'
 import { Container } from '@mui/system'
 import { useTranslation } from 'react-i18next'
+import { theme } from '../..'
 import banner from '../../images/banner.jpg'
 
 export function Banner() {
   const { t } = useTranslation('translation')
+
+  const sm = useMediaQuery(theme.breakpoints.up('sm'))
+
   return (
     <Box
       sx={{
@@ -19,13 +23,13 @@ export function Banner() {
     >
       <Box sx={{ height: '100%', bgcolor: (theme) => alpha(theme.palette.common.black, 0.5) }}>
         <Container sx={{ height: '100%' }}>
-          <Stack alignItems="center" justifyContent="center" sx={{ height: '100%' }}>
+          <Stack alignItems="center" justifyContent="center" height="100%" width="100%">
             <Typography
-              variant="h2"
+              variant={sm ? 'h3' : 'h4'}
               fontWeight={500}
               color="white"
               sx={{
-                // fontFamily: 'monospace',
+                textAlign: 'center',
                 letterSpacing: '.1rem',
                 textDecoration: 'none',
               }}
@@ -34,11 +38,11 @@ export function Banner() {
             </Typography>
 
             <Typography
-              variant="h1"
+              variant={sm ? 'h1' : 'h2'}
               fontWeight={600}
               color="white"
               sx={{
-                // fontFamily: 'monospace',
+                textAlign: 'center',
                 letterSpacing: '.1rem',
                 textDecoration: 'none',
               }}
