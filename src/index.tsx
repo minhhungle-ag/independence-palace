@@ -8,6 +8,7 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles'
 import { CssBaseline } from '@mui/material'
+import { i18nTranslation } from './i18n/i18n'
 
 export let theme = createTheme({
   // typography: {
@@ -31,6 +32,7 @@ theme = responsiveFontSizes(theme)
 
 const container = document.getElementById('root')!
 const root = createRoot(container)
+i18nTranslation()
 
 root.render(
   <React.StrictMode>

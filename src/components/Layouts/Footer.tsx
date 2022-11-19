@@ -1,7 +1,16 @@
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import TwitterIcon from '@mui/icons-material/Twitter'
-import { Box, Button, Container, Divider, IconButton, Stack, Typography } from '@mui/material'
+import {
+  alpha,
+  Box,
+  Button,
+  Container,
+  Divider,
+  IconButton,
+  Stack,
+  Typography,
+} from '@mui/material'
 import { LOGO } from '../../constants/common'
 const social = [
   {
@@ -20,7 +29,13 @@ const social = [
 
 export function Footer() {
   return (
-    <Box sx={{ bgcolor: 'primary.main', color: 'grey.300' }}>
+    <Box
+      sx={{
+        bgcolor: (theme) => alpha(theme.palette.common.black, 0.7),
+        backdropFilter: 'blur(20px)',
+        color: 'grey.300',
+      }}
+    >
       <Container>
         <Stack spacing={2}>
           <Stack
