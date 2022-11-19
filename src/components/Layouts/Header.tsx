@@ -14,7 +14,7 @@ export interface HeaderProps {
 }
 
 export function Header({ onToggleDrawer }: HeaderProps) {
-  const [isEn, setIsEn] = useState(false)
+  const [isEn, setIsEn] = useState(true)
   const { t, i18n } = useTranslation('menu')
 
   const pages = [
